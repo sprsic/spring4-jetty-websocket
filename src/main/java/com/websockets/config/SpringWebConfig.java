@@ -1,4 +1,4 @@
-package com.sasa.config;
+package com.websockets.config;
  
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.JstlView;
  
 @EnableWebMvc
 @Configuration
-@ComponentScan({"com.sasa.*"})
+@ComponentScan({"com.websockets.*"})
 @EnableScheduling
 public class SpringWebConfig extends WebMvcConfigurerAdapter {
  

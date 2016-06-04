@@ -1,4 +1,4 @@
-package com.sasa.config;
+package com.websockets.config;
 
 import org.eclipse.jetty.websocket.api.WebSocketBehavior;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;

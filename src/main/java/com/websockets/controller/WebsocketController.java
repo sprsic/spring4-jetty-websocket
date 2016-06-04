@@ -1,4 +1,4 @@
-package com.sasa.web.controller;
+package com.websockets.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
@@ -6,12 +6,12 @@ import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class AjaxController {
+public class WebsocketController {
 
 	private final SimpMessagingTemplate messagingTemplate;
 
 	@Autowired
-	public AjaxController(SimpMessagingTemplate messagingTemplate) {
+	public WebsocketController(SimpMessagingTemplate messagingTemplate) {
 		this.messagingTemplate = messagingTemplate;
 	}
 
@@ -21,7 +21,7 @@ public class AjaxController {
 	}
 
 	public void sendNotification(String message) {
-
+		//push notifications to server
 		this.messagingTemplate.convertAndSend("/topic/data", message);
 	}
 

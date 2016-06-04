@@ -1,8 +1,8 @@
-package com.sasa.servlet3;
+package com.websockets.servlet3;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import com.sasa.config.SpringWebConfig;
+import com.websockets.config.SpringWebConfig;
 
 public class MyWebInitializer extends
 		AbstractAnnotationConfigDispatcherServletInitializer {
